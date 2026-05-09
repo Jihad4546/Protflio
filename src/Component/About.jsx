@@ -65,7 +65,7 @@ export default function About() {
                         >
                             {/* IMAGE */}
                             <img
-                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+                                src="/profile.png"
                                 alt="Developer"
                                 fill
                                 priority
@@ -161,7 +161,7 @@ export default function About() {
                             <h3 className="font-semibold text-lg">Experience</h3>
 
                             <p className="text-gray-400 text-sm mt-2">
-                                3 Years Working
+                                6 Month Working
                             </p>
                         </Card>
 
@@ -190,7 +190,7 @@ export default function About() {
                             <h3 className="font-semibold text-lg">Projects</h3>
 
                             <p className="text-gray-400 text-sm mt-2">
-                                150+ Completed
+                                10+ Completed
                             </p>
                         </Card>
 
@@ -228,7 +228,7 @@ export default function About() {
                     <div className="mt-10 space-y-5">
                         <p className="text-gray-300 leading-8">
                             Skilled in React.js, Next.js, Express.js, MongoDB,
-                            PostgreSQL, Prisma, Docker and scalable backend systems.
+                            Node.js backend systems.
                         </p>
 
                         <p className="text-gray-500 leading-8">
@@ -240,7 +240,7 @@ export default function About() {
                     {/* BUTTON */}
                     <div className="mt-12">
                       
-                        <Button radius="full" className="flex justify-center items-center gap-3 group `h-[58px]` px-8 bg-white/5 border border-cyan-400/30 text-white text-base font-medium backdrop-blur-xl transition-all duration-300 shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:scale-105 hover:border-cyan-400 hover:bg-cyan-400/10 " startContent={<HiOutlineDocumentDownload className=" text-xl text-cyan-400 transition-all duration-300 group-hover:animate-bounce " />} endContent={<div className=" w-7 h-7 rounded-full bg-cyan-400 flex items-center justify-center text-black transition-all duration-300 group-hover:translate-y-1 " > <HiArrowDown className="text-sm" /> </div>}  >
+                        <Button radius="full" className="flex justify-center items-center gap-3 group `h-[58px]` py-5 px-8 mb-5 bg-white/5 border border-cyan-400/30 text-white text-base font-medium backdrop-blur-xl transition-all duration-300 shadow-[0_0_25px_rgba(34,211,238,0.15)] hover:scale-105 hover:border-cyan-400 hover:bg-cyan-400/10 rounded-2xl" startContent={<HiOutlineDocumentDownload className=" text-xl text-cyan-400 transition-all duration-300 group-hover:animate-bounce " />} endContent={<div className=" w-7 h-7 rounded-full bg-cyan-400 flex items-center justify-center text-black transition-all duration-300 group-hover:translate-y-1 " > <HiArrowDown className="text-sm" /> </div>}  >
                               <FaRegFile/>Download Resume </Button>
                     </div>
                 </div>

@@ -23,7 +23,7 @@ const projects = [
     {
         title: "Google Drive Clone: File Sharing Platform",
         desc: "Secure cloud storage with real-time updates & file sharing.",
-        img: "/project1.png",
+        img: "/project1.png", 
         tech: ["Next.js", "React", "Node.js", "Clerk", "Tailwind CSS"],
         live: "https://jocular-basbousa-85eb43.netlify.app/",
         github: "https://github.com/Jihad4546/A13-A6",

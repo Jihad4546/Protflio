@@ -33,7 +33,19 @@ export default function Navber() {
         rounded-full px-4 md:px-6 py-3 shadow-lg"
       >
         {/* LOGO */}
-        <div className="text-white font-bold text-lg">A</div>
+        <div className="relative inline-flex items-center justify-center px-6 py-3 rounded-2xl overflow-hidden group cursor-pointer">
+
+  {/* Glow Background */}
+  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 opacity-70 blur-md group-hover:blur-xl transition-all duration-500" />
+
+  {/* Glass Layer */}
+  <div className="absolute inset-[2px] rounded-2xl bg-black/80 backdrop-blur-xl border border-white/10" />
+
+  {/* Text */}
+  <h1 className="relative z-10 text-2xl md:text-3xl font-extrabold tracking-[6px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-white to-cyan-400 drop-shadow-[0_0_10px_cyan]">
+    JIHAD
+  </h1>
+</div>
 
         {/* DESKTOP MENU */}
         <div className="hidden md:flex gap-2">
