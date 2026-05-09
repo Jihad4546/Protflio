@@ -109,13 +109,19 @@ export default function Projects() {
                             </div>
 
                             {/* BUTTONS */}
-                            <div className="flex gap-3 mt-6">
+                          <div className="flex flex-col sm:flex-row gap-3 mt-6">
 
-                                {/* LIVE DEMO */}
-                                <a href={project.live} target="_blank" rel="noreferrer">
-                                    <Button
-                                        size="sm"
-                                        className="
+  {/* LIVE DEMO */}
+  <a
+    href={project.live}
+    target="_blank"
+    rel="noreferrer"
+    className="w-full sm:w-auto"
+  >
+    <Button
+      size="sm"
+      className="
+        w-full sm:w-auto
         relative overflow-hidden
         px-5 py-2
         rounded-full
@@ -133,17 +139,23 @@ export default function Projects() {
         hover:border-cyan-400
         hover:shadow-[0_0_25px_rgba(34,211,238,0.25)]
       "
-                                        startContent={<FaExternalLinkAlt />}
-                                    >
-                                        Live Demo
-                                    </Button>
-                                </a>
+      startContent={<FaExternalLinkAlt />}
+    >
+      Live Demo
+    </Button>
+  </a>
 
-                                {/* GITHUB */}
-                                <a href={project.github} target="_blank" rel="noreferrer">
-                                    <Button
-                                        size="sm"
-                                        className="
+  {/* GITHUB */}
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noreferrer"
+    className="w-full sm:w-auto"
+  >
+    <Button
+      size="sm"
+      className="
+        w-full sm:w-auto
         relative overflow-hidden
         px-5 py-2
         rounded-full
@@ -161,13 +173,13 @@ export default function Projects() {
         hover:border-white/30
         hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]
       "
-                                        startContent={<FaGithub />}
-                                    >
-                                        GitHub
-                                    </Button>
-                                </a>
+      startContent={<FaGithub />}
+    >
+      GitHub
+    </Button>
+  </a>
 
-                            </div>
+</div>
                         </div>
                     </Card>
                 ))}

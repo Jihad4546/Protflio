@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { Button, Card } from "@heroui/react";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaExternalLinkAlt, FaGithub, FaLinkedin, FaWhatsapp, } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   const canvasRef = useRef(null);
@@ -90,6 +91,44 @@ export default function Home() {
         className="fixed inset-0 z-0 pointer-events-none"
       />
 
+      {/* LEFT CONTACT SIDEBAR */}
+    <div className="hidden md:flex fixed left-4 top-1/2 -translate-y-1/2 z-[9999] flex-col gap-4">
+
+  <a
+     href="https://mail.google.com/mail/?view=cm&to=hasanjihad4546@gmail.com"
+    className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-xl border border-white/20 hover:border-cyan-400 hover:scale-110 transition"
+  >
+    <FaEnvelope />
+  </a>
+
+  <a
+    href="https://github.com/yourusername"
+    target="_blank"
+    rel="noreferrer"
+    className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-xl border border-white/20 hover:border-cyan-400 hover:scale-110 transition"
+  >
+    <FaGithub />
+  </a>
+
+  <a
+    href="https://linkedin.com/in/yourusername"
+    target="_blank"
+    rel="noreferrer"
+    className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-xl border border-white/20 hover:border-cyan-400 hover:scale-110 transition"
+  >
+    <FaLinkedin />
+  </a>
+
+  <a
+    href="https://wa.me/8801XXXXXXXXX"
+    target="_blank"
+    rel="noreferrer"
+    className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-xl border border-white/20 hover:border-green-400 hover:scale-110 transition"
+  >
+    <FaWhatsapp />
+  </a>
+
+</div>
       <section className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-28 gap-12">
         <div className="max-w-xl">
           <p className="text-gray-400 text-sm">Hey, I'm</p>
@@ -108,13 +147,14 @@ export default function Home() {
             Turning ideas into stunning websites 🌐 <br />
             Available for projects & collaborations 🤝
           </p>
-          <div className="flex gap-3 mt-6">
+     <div className="flex flex-col sm:flex-row gap-3 mt-6">
 
-            {/* LIVE DEMO */}
-            <a href='' target="_blank" rel="noreferrer">
-              <Button
-                size="sm"
-                className="
+  {/* TECHNOLOGIES */}
+  <a href="" target="_blank" rel="noreferrer" className="w-full sm:w-auto">
+    <Button
+      size="sm"
+      className="
+        w-full sm:w-auto
         relative overflow-hidden
         px-5 py-2
         rounded-full
@@ -132,17 +172,18 @@ export default function Home() {
         hover:border-cyan-400
         hover:shadow-[0_0_25px_rgba(34,211,238,0.25)]
       "
-                startContent={<FaExternalLinkAlt />}
-              >
-                Technologies
-              </Button>
-            </a>
+      startContent={<FaExternalLinkAlt />}
+    >
+      Technologies
+    </Button>
+  </a>
 
-            {/* GITHUB */}
-            <a href='' target="_blank" rel="noreferrer">
-              <Button
-                size="sm"
-                className="
+  {/* CONTACT */}
+  <a href="" target="_blank" rel="noreferrer" className="w-full sm:w-auto">
+    <Button
+      size="sm"
+      className="
+        w-full sm:w-auto
         relative overflow-hidden
         px-5 py-2
         rounded-full
@@ -160,13 +201,13 @@ export default function Home() {
         hover:border-white/30
         hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]
       "
-                startContent={<FaGithub />}
-              >
-                Contact Me
-              </Button>
-            </a>
+      startContent={<FaGithub />}
+    >
+      Contact Me
+    </Button>
+  </a>
 
-          </div>
+</div>
         </div>
 
         <Card className="relative bg-[#0b0d1c]/80 backdrop-blur-xl border border-cyan-400/20 p-8 w-[360px] h-[420px] flex justify-center items-center overflow-hidden shadow-[0_0_40px_rgba(0,255,255,0.12)] rounded-[30px]">
@@ -207,7 +248,7 @@ export default function Home() {
 
             {/* Projects Card */}
             <div className="absolute bottom-0 bg-white/10 backdrop-blur-xl border border-white/10 px-5 py-3 rounded-2xl text-xs text-white shadow-lg hover:scale-105 transition-all duration-300">
-              <p className="text-cyan-300 font-bold text-lg text-center">10+</p>
+              <p className="text-cyan-300 font-bold text-lg text-center">150+</p>
               <p className="text-gray-300">Projects Completed</p>
             </div>
           </div>
