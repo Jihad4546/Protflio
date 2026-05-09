@@ -150,7 +150,7 @@ export default function About() {
               justify-center
               text-center
               backdrop-blur-xl
-              h-[170px]
+              `h-[170px]`
               hover:-translate-y-2
               transition-all
               duration-300

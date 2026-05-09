@@ -33,21 +33,21 @@ export default function Navber() {
         rounded-full px-4 md:px-6 py-3 shadow-lg"
       >
         {/* LOGO */}
-        {/* LOGO */}
-        <div className="relative inline-flex items-center justify-center px-3 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl overflow-hidden group cursor-pointer">
+     {/* LOGO */}
+<div className="relative inline-flex items-center justify-center px-3 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl overflow-hidden group cursor-pointer">
 
-          {/* Glow Background */}
-          <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 opacity-60 blur-md group-hover:blur-xl transition-all duration-500" />
+  {/* Glow Background */}
+  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 opacity-60 blur-md group-hover:blur-xl transition-all duration-500" />
 
-          {/* Glass Layer */}
-          <div className="absolute inset-[2px] rounded-xl md:rounded-2xl bg-black/80 backdrop-blur-xl border border-white/10" />
+  {/* Glass Layer */}
+  <div className="absolute inset-[2px] rounded-xl md:rounded-2xl bg-black/80 backdrop-blur-xl border border-white/10" />
 
-          {/* Text */}
-          <h1 className="relative z-10 text-lg md:text-3xl font-extrabold tracking-[4px] md:tracking-[6px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-white to-cyan-400 drop-shadow-[0_0_10px_cyan]">
-            JH
-          </h1>
+  {/* Text */}
+  <h1 className="relative z-10 text-lg md:text-3xl font-extrabold tracking-[4px] md:tracking-[6px] text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-white to-cyan-400 drop-shadow-[0_0_10px_cyan]">
+    JH
+  </h1>
 
-        </div>
+</div>
 
         {/* DESKTOP MENU */}
         <div className="hidden md:flex gap-2">
@@ -58,10 +58,11 @@ export default function Navber() {
                 key={item.name}
                 onClick={() => setActive(item.name)}
                 className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm transition-all duration-300
-                ${active === item.name
+                ${
+                  active === item.name
                     ? "bg-white/10 text-white shadow-inner"
                     : "text-gray-400 hover:text-white"
-                  }`}
+                }`}
               >
                 <Icon className={`text-lg ${item.color}`} />
                 {item.name}
@@ -93,10 +94,11 @@ export default function Navber() {
                     setOpen(false);
                   }}
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg text-sm text-left transition
-                  ${active === item.name
+                  ${
+                    active === item.name
                       ? "bg-white/10 text-white"
                       : "text-gray-400 hover:text-white"
-                    }`}
+                  }`}
                 >
                   <Icon className={`text-lg ${item.color}`} />
                   {item.name}

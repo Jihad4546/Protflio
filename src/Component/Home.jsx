@@ -92,7 +92,7 @@ export default function Home() {
       />
 
       {/* LEFT CONTACT SIDEBAR */}
-    <div className="hidden md:flex fixed left-4 top-1/2 -translate-y-1/2 z-[9999] flex-col gap-4">
+    <div className="hidden md:flex fixed left-4 top-1/2 -translate-y-1/2 `z-[9999]` flex-col gap-4">
 
   <a
      href="https://mail.google.com/mail/?view=cm&to=hasanjihad4546@gmail.com"
@@ -210,64 +210,78 @@ export default function Home() {
 </div>
         </div>
 
-        <Card className="relative bg-[#0b0d1c]/80 backdrop-blur-xl border border-cyan-400/20 p-8 w-[360px] h-[420px] flex justify-center items-center overflow-hidden shadow-[0_0_40px_rgba(0,255,255,0.12)] rounded-[30px]">
+      <Card
+  className="
+    relative
+    bg-[#0b0d1c]/80
+    backdrop-blur-xl
+    border border-cyan-400/20
 
-          {/* Glow Effects */}
-          <div className="absolute -top-20 -left-20 w-52 h-52 bg-cyan-400/20 blur-[100px]" />
-          <div className="absolute bottom-0 right-0 w-52 h-52 bg-blue-500/20 blur-[100px]" />
+    w-full max-w-[360px]
+    h-auto md:h-[420px]
 
-          <div className="relative z-10 flex justify-center items-center">
+    flex justify-center items-center
+    overflow-hidden
 
-            {/* Main Profile Image */}
-            <div className="relative animate-[float_4s_ease-in-out_infinite]">
+    shadow-[0_0_40px_rgba(0,255,255,0.12)]
+    rounded-[30px]
 
-              {/* Glow */}
-              <div className="absolute inset-0 bg-cyan-400/20 blur-3xl rounded-full" />
+    p-6 md:p-8
+  "
+>
 
-              {/* Image */}
-              <div className="w-52 h-52 rounded-full overflow-hidden border-4 border-cyan-400/30 shadow-[0_0_35px_rgba(0,255,255,0.35)]">
-                <img
-                  src="/profile.png"
-                  alt="Profile"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+  {/* Glow Effects */}
+  <div className="absolute -top-20 -left-20 w-40 md:w-52 h-40 md:h-52 bg-cyan-400/20 blur-[100px]" />
+  <div className="absolute bottom-0 right-0 w-40 md:w-52 h-40 md:h-52 bg-blue-500/20 blur-[100px]" />
 
-            {/* Experience Card */}
-            <div className="absolute -left-12 top-1/2 -translate-y-1/2 bg-white/10 backdrop-blur-xl border border-white/10 px-4 py-3 rounded-2xl text-xs text-white shadow-lg hover:scale-105 transition-all duration-300">
-              <p className="text-cyan-300 font-bold text-lg">6+</p>
-              <p className="text-gray-300">Month Experience</p>
-            </div>
+  <div className="relative z-10 flex flex-col items-center justify-center gap-6">
 
-            {/* Problems Card */}
-            <div className="absolute -right-10 top-3 bg-white/10 backdrop-blur-xl border border-white/10 px-4 -mx-6 py-3 rounded-2xl text-xs text-white shadow-lg hover:scale-105 transition-all duration-300">
-              <p className="text-cyan-300 font-bold text-lg">20</p>
-              <p className="text-gray-300">Problems Solved</p>
-            </div>
+    {/* Profile Image */}
+    <div className="relative animate-[float_4s_ease-in-out_infinite]">
 
-            {/* Projects Card */}
-            <div className="absolute bottom-0 bg-white/10 backdrop-blur-xl border border-white/10 px-5 py-3 rounded-2xl text-xs text-white shadow-lg hover:scale-105 transition-all duration-300">
-              <p className="text-cyan-300 font-bold text-lg text-center">150+</p>
-              <p className="text-gray-300">Projects Completed</p>
-            </div>
-          </div>
+      <div className="absolute inset-0 bg-cyan-400/20 blur-3xl rounded-full" />
 
-          {/* Floating Animation */}
-          <style jsx>{`
+      <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-cyan-400/30 shadow-[0_0_35px_rgba(0,255,255,0.35)]">
+        <img
+          src="/profile.png"
+          alt="Profile"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+    {/* BADGES (responsive layout) */}
+    <div className="flex flex-wrap justify-center gap-3">
+
+      <div className="bg-white/10 backdrop-blur-xl border border-white/10 px-4 py-3 rounded-2xl text-xs text-white text-center">
+        <p className="text-cyan-300 font-bold text-lg">6+</p>
+        <p className="text-gray-300">Month Experience</p>
+      </div>
+
+      <div className="bg-white/10 backdrop-blur-xl border border-white/10 px-4 py-3 rounded-2xl text-xs text-white text-center">
+        <p className="text-cyan-300 font-bold text-lg">20</p>
+        <p className="text-gray-300">Problems Solved</p>
+      </div>
+
+      <div className="bg-white/10 backdrop-blur-xl border border-white/10 px-4 py-3 rounded-2xl text-xs text-white text-center">
+        <p className="text-cyan-300 font-bold text-lg">150+</p>
+        <p className="text-gray-300">Projects Completed</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* FLOAT ANIMATION */}
+  <style jsx>{`
     @keyframes float {
-      0% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-12px);
-      }
-      100% {
-        transform: translateY(0px);
-      }
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
     }
   `}</style>
-        </Card>
+
+</Card>
       </section>
     </main>
   );
